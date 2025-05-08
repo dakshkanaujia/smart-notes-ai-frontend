@@ -53,7 +53,7 @@ const UploadForm = ({onNoteAdded }) => {
       }
       console.log("5")
       const response = await axios.post(
-        `${import.meta.env.API_BASE_URL}/notes/upload`,
+        `${import.meta.env.VITE_API_BASE_URL}/notes/upload`,
         formData,
         {
           headers: {

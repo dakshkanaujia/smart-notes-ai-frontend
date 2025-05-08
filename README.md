@@ -39,7 +39,7 @@ This is the frontend part of the Smart Notes Summarizer application. It is built
 Create a `.env` file in the frontend directory with the following content:
 
 ```
-API_BASE_URL=http://localhost:5000/api
+VITE_API_BASE_URL=http://localhost:5000/api
 ```
 
 Adjust the URL if your backend is running on a different port or host.

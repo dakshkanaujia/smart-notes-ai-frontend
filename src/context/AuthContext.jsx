@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
   const register = async (userData) => {
     try {
       const res = await axios.post(
-        `${import.meta.env.API_BASE_URL}/auth/register`, 
+        `${import.meta.env.VITE_API_BASE_URL}/auth/register`, 
         userData
       );
       return res.data;
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (credentials) => {
     try {
       const res = await axios.post(
-        `${import.meta.env.API_BASE_URL}/auth/login`, 
+        `${import.meta.env.VITE_API_BASE_URL}/auth/login`, 
         credentials
       );
       
